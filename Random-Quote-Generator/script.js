@@ -55,11 +55,6 @@ $ (document).ready (function () {
   });
 
   $ ('.tweetthis').on ('click', function () {
-    window.open (
-      '' +
-        randomQuote +
-        ' - ' +
-        randomAuthor
-    );
+    window.open ('' + randomQuote + ' - ' + randomAuthor);
   });
 });
