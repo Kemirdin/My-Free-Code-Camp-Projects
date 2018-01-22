@@ -1,22 +1,44 @@
-body {
-    background: url("http://res.cloudinary.com/bergquist/image/upload/v1496748828/BCKG-1-pexels-photo-94576_web_rqmcs0.png");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    font-family: "Times New Roman", Times, serif;
-    min-height: 100%;
-    min-width: 100%;
-    position: absolute;
+#menu {
+    width: 100%;
+    position: fixed;
+    background-color: LightSeaGreen;
     top: 0;
     left: 0;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    display: block;
-    font-size: 18px;
-    letter-spacing: 2px;
+    font-family: century gothic;
+}
+
+#menu nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menu nav ul li {
+    list-style: none;
+    display: inline-block;
+    color: #fff;
+    padding: 15px;
+}
+
+#menu nav ul li a {
+    margin-left: 8px;
+    color: #333;
+    text-shadow: 0 1px 1px #fff;
+    text-decoration: none;
+}
+
+#menu nav ul li:hover {
+    color: #dfc;
+    border-bottom: 8px solid #fff;
+    padding-bottom: 7px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: -webkit-radial-gradient(top, #808, #000);
+    text-align: center;
 }
 
 .back {
@@ -35,7 +57,7 @@ body {
 }
 
 .container-fluid {
-    position: absolute;
+    margin: 100px 50px;
     left: 0;
     right: 0;
     top: 35%;
@@ -48,6 +70,7 @@ body {
 }
 
 .quote {
+    color: white;
     font-size: 1.3em;
     padding: 8px 0;
 }
@@ -57,6 +80,7 @@ body {
 }
 
 .author {
+    color: white;
     display: hide;
     font-size: 1.1em;
     font-style: italic;
@@ -70,6 +94,7 @@ body {
 }
 
 .generate img {
+    margin: 70px;
     height: 40px;
 }
 
@@ -99,4 +124,120 @@ a:hover {
     text-align: center;
     font-size: 0.8em;
     padding-bottom: 10px;
+}
+
+#box {
+    margin: 5% auto;
+}
+
+.drop {
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    font-size: 5em;
+    text-shadow: 0 0 4px #000;
+    color: #000;
+    border: 1px solid rgba(153, 255, 253, 0.2);
+    border-radius: 5%;
+    padding: 12px;
+    -webkit-transition: all 1s;
+}
+
+.drop:nth-child(1) {
+    color: #f20;
+    -webkit-animation: rr 2s infinite alternate;
+}
+
+.drop:nth-child(2) {
+    color: #d2c;
+    -webkit-animation: ii 2.2s infinite alternate;
+}
+
+.drop:nth-child(3) {
+    color: #ee0;
+    -webkit-animation: cc 2.3s infinite alternate;
+}
+
+.drop:nth-child(4) {
+    color: #090;
+    -webkit-animation: kk 2.4s infinite alternate;
+}
+
+.drop:nth-child(5) {
+    color: #d50;
+    -webkit-animation: yy 2.5s infinite alternate;
+}
+
+@-webkit-keyframes rr {
+    from {
+        top: 100px;
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        top: 200px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes ii {
+    from {
+        top: 100px;
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        top: 210px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes cc {
+    from {
+        top: 100px;
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        top: 180px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes cc {
+    from {
+        top: 100px;
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        top: 240px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes kk {
+    from {
+        top: 100px;
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        top: 190px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes yy {
+    from {
+        top: 100px;
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        top: 200px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.drop:hover {
+    -webkit-animation-play-state: paused;
+    cursor: move;
+    text-shadow: 0 0 20px #fff;
+    color: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, .1);
 }
