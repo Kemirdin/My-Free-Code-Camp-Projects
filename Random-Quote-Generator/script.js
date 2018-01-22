@@ -56,7 +56,7 @@ $ (document).ready (function () {
 
   $ ('.tweetthis').on ('click', function () {
     window.open (
-      'https://twitter.com/intent/tweet?text=' +
+      '' +
         randomQuote +
         ' - ' +
         randomAuthor
