@@ -1,0 +1,36 @@
+#newQuote {
+    margin-top: 20px;
+}
+
+#tweet {
+    margin-top: 20px;
+}
+
+.box {
+    background-color: black;
+    color: red;
+    border: 3px white solid;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.all {
+    background-color: black;
+    color: white;
+    border-bottom: 50px;
+    height: 100%;
+}
+
+.quote {
+    border-bottom: none;
+}
+
+.author {
+    border-top: none;
+}
+
+body {
+    background-color: black;
+}
